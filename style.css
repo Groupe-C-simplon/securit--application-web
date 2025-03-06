@@ -1,51 +1,133 @@
+/* Importation de Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Styles généraux */
 body {
-        font-family: 'Poppins', sans-serif;
-        background: #f4f4f9;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-    #header {
-        background: #2c3e50;
-        color: white;
-        padding: 15px;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    #banner {
-        text-align: center;
-        padding: 60px 20px;
-        background: #34495e;
-        color: white;
-        font-size: 1.8rem;
-    }
-    .content {
-        max-width: 900px;
-        margin: 30px auto;
-        padding: 20px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    h1, h2 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    ul, ol {
-        margin: 20px;
-        padding-left: 20px;
-    }
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #2c3e50;
-        color: white;
-    }
-    a {
-        color: #e67e22;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0F172A;
+    color: white;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1E40AF, #9333EA);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bannière */
+#banner {
+    background: url('https://source.unsplash.com/1600x900/?technology,security') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#banner .inner {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Titres */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #60A5FA;
+}
+
+/* Paragraphes */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Listes */
+ul, ol {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+li {
+    padding: 10px 0;
+}
+
+/* Section articles */
+.articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.article-wrapper {
+    background: #1E293B;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-wrapper:hover {
+    transform: translateY(-10px);
+}
+
+.article-body h2, .article-body h3 {
+    color: #FACC15;
+    text-align: center;
+}
+
+/* Liens */
+a {
+    color: #FACC15;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #60A5FA;
+}
+
+/* Boutons */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #9333EA, #1E40AF);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1E40AF, #9333EA);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1E293B;
+    color: white;
+    margin-top: 40px;
+}
